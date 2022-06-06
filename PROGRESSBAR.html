@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar in Html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            height: 10vh;
+
+        }
+
+        main {
+            height: 80vh;
+            background-color: aqua;
+        }
+
+        .progress {
+            background-color: red;
+            height: 3px;
+            animation: load 2s ease-out 1;
+        }
+       img{
+           animation:  rotate  20s ease-in infinite;
+       }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(720deg);
+                
+            }
+        }
+
+        @keyframes load {
+            0% {
+                width: 20vw;
+            }
+
+            40% {
+                width: 60vw;
+            }
+
+            50% {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+        <img src="download.png" alt="" width="200px">
+    </main>
+</body>
+
+</html>

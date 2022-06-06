@@ -1,0 +1,291 @@
+<html>
+
+<head>
+    <title>Application Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color:rgb(41, 190, 245) ;
+        }
+
+        body table {
+        
+            font-size: 20px;
+        }
+
+        header {
+            height: 10vh;
+            background-color: rgb(4, 156, 250);
+        }
+
+        .tab {
+            margin-left: 20%;
+
+
+        }
+
+        .first {
+            color: rgb(251, 255, 0);
+            padding-top: 14px;
+        }
+
+        .para {
+            color: white;
+            background-color: black;
+            padding-top: 6px;
+
+            height: 6vh;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+        }
+        .subm button{
+            position: absolute;
+            height: 3rem;
+            width: 8rem;
+            border-radius: 10px;
+            background-color:rgb(96, 155, 7);
+            border: 2px solid black;
+            left: 46%;
+            bottom:-46%;
+
+        }
+        .subm button:hover{
+            background-color:rgb(4, 156, 250);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="first" style="text-align:center;">Student Application Form</h1>
+    </header>
+
+
+    <h2 class="tab" style="text-align:left;">Student Information:</h2>
+    <table class="tab">
+        <tr>
+            <td>Student Name :</td>
+            <td><input type="text" placeholder="Enter FullName " >
+            </td>
+        </tr>
+
+        <tr>
+            <td>Student Roll No :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Gender :</td>
+            <td>
+                <label for="male">
+                    <input type="radio" name="section">Male
+                </label>
+            </td>
+            <td>
+                <label for="female">
+                    <input type="radio" name="section">Female
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Phone no:</td>
+            <td><input type="text" placeholder="+977 98--------">
+            </td>
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td><input type="text" placeholder="name@email.com">
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Birth:</td>
+            <td><input type="text" placeholder="MM/DD/YY">
+            </td>
+        </tr>
+        <tr>
+            <td>Place of birth :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Caste</td>
+            <td>
+                <input type="checkbox" name="caste" id="SC">S.C
+                <input type="checkbox" name="caste" id="ST">S.T
+                <input type="checkbox" name="caste" id="NT">N.T
+                <input type="checkbox" name="caste" id="OBC">O.B.C
+                <input type="checkbox" name="caste" id="Others">Others
+            </td>
+        </tr>
+
+        <td>State :</td>
+        <td><input type="text">
+        </td>
+        </tr>
+        <tr>
+            <td>District :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>City :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Locality :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Pincode :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <h2 class="tab" style="text-align:left;">Parent/Guardian Information:</h2>
+    <table class="tab">
+        <tr>
+            <td>Parent/Guardian Name :</td>
+            <td><input type="text" placeholder="Enter FullName">
+            </td>
+        </tr>
+        <tr>
+            <td>Gender :</td>
+            <td>
+                <label for="male">
+                    <input type="radio" name="section">Male
+                </label>
+            </td>
+            <td>
+                <label for="female">
+                    <input type="radio" name="section">Female
+                </label>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Phone no:</td>
+            <td><input type="text" placeholder="+977 98------">
+            </td>
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td><input type="text" placeholder="name@email.com">
+            </td>
+        </tr>
+        <tr>
+            <td>State :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>District :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>City :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Locality :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Pincode :</td>
+            <td><input type="text">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+    <h2 class="tab" style="text-align:left;">Marks Obtained in the qualifying examination:</h2>
+    <table class="tab" width="700" height="180" border=3px>
+        <tr>
+            <th>Name of the exam</th>
+            <th>Year of Passing</th>
+            <th>Marks/preentage</th>
+            <th>Name of the university</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+
+
+
+
+
+    <h4 style="text-align:center;">I hereby undertake to state that the above information is true to the best of my
+        knowledge and belief.If it is found incorrect then i am liable to be punished.</h4>
+    <br>
+    <br>
+    <div class="box">
+        <h3 class="one">Signature of Parent/Guardian
+
+        </h3>
+        <h3 class="two">Signature of Student
+        </h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="subm">
+        <button type="submit">Submit </button>
+    </div>
+    <br>
+    <br>
+
+
+    <footer>
+        <p class="para">
+            Copyright claim &copy; Presented By Tannu BK
+        </p>
+    </footer>
+
+</body>
+
+</html>

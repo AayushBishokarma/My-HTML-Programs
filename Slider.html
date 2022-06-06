@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider In Html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: black;
+            height: 10vh;
+        }
+
+        .container1 {
+            background-color: aqua;
+            height: 70vh;
+        }
+
+        .container2 {
+            background-color: white;
+            height: 30vh;
+            display: flex;
+            box-sizing: border-box;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .img1 {
+            margin: auto;
+            height: 30vh;
+            width: 740px;
+            transform: translate(16vw);
+            animation: slide1 3s forwards  infinite;
+           
+        }
+
+        .img2 {
+            margin: auto;
+            height: 30vh;
+            width: 680px;
+            transform: translate(-112vw);
+            animation: slide2 3s forwards  infinite;
+        }
+
+        @keyframes slide1 {
+            0%{
+                transform: translate(16vw);
+            }
+            100%{
+                transform: translate(107vw);
+            }
+            
+        }
+        @keyframes slide2 {
+            0%{
+                transform: translate(-112vw);
+            }
+            100%{
+                transform: translate(-26vw);
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="container2">
+        <img class="img1" src="images.jfif" alt="">
+        <img class="img2" src="images (1).jfif" alt="">
+        
+    </div>
+    <div class="container1"></div>
+</body>
+
+</html>
